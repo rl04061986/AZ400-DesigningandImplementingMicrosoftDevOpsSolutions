@@ -18,7 +18,6 @@ steps:
 
 - task: Npm@1
   inputs:
-    command: 'install'
-    customCommand: 'run build'
-    'test'
+    command: 'custom'
+    customCommand: 'run test'
   displayName: 'Install Node.js 2'
